@@ -5,27 +5,33 @@ body {
     color: #000000;
     background: white;
     line-height: 1.2;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important; /* Đảm bảo không có lề trình duyệt */
+    padding: 0 !important;
+    width: 100%;
 }
 .mainPrints {
     height: 148mm;
-    width: 96mm;
-    /*background: white;*/
-    /*color: #000000;*/
-    /*line-height: 1.2;*/
-    border: solid 1px #000;
+    /* width: 96mm; <- Bỏ chiều rộng cố định này */
+    width: 100% !important; /* Để nó chiếm hết khổ giấy máy in */
+    border: none; /* Thông thường in nhiệt nên bỏ border để tránh nhiễu */
     position: relative;
-    /*font-size: 10px;*/
-    /*font-weight: 500;*/
-    margin: 0 auto auto auto;
+    margin: 0 !important; /* Xóa 'auto' để không bị căn giữa */
+    padding: 0;
     overflow: hidden;
+    background: white;
+    page-break-after: always; /* Hỗ trợ ngắt trang khi in */
 }
 
+.page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Nếu bạn không in ra giấy A4, hãy vô hiệu hóa lề của .a4 */
 .a4 {
-    width: 8in;
-    height: 11in;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
 }
 
 .a4 .mainPrints {
