@@ -1,27 +1,31 @@
 body {
-    /* ... giữ nguyên các thuộc tính khác ... */
-    margin: 0 !important;
-    padding: 0 !important;
+    font-family: Arial, Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: #000000;
+    background: white;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
 }
-
 .mainPrints {
-    /* ... giữ nguyên width: 96mm và height: 148mm ... */
-    margin: 0 !important; /* Thay đổi từ '0 auto' thành '0' để ép sát lề trái */
-    border: none !important; /* Bỏ border đen để tránh in ra viền thừa */
+    height: 148mm;
+    width: 96mm;
+    /*background: white;*/
+    /*color: #000000;*/
+    /*line-height: 1.2;*/
+    border: solid 1px #000;
     position: relative;
+    /*font-size: 10px;*/
+    /*font-weight: 500;*/
+    margin: 0 auto auto auto;
     overflow: hidden;
 }
 
-.page {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Nếu bạn không in ra giấy A4, hãy vô hiệu hóa lề của .a4 */
 .a4 {
-    width: 100%;
-    margin: 0;
+    width: 8in;
+    height: 11in;
+    margin: 0 auto;
 }
 
 .a4 .mainPrints {
