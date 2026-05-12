@@ -1,0 +1,537 @@
+body {
+    font-family: Arial, Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: #000000;
+    background: white;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+.mainPrints {
+    height: 148mm;
+    width: 96mm;
+    /*background: white;*/
+    /*color: #000000;*/
+    /*line-height: 1.2;*/
+    border: solid 1px #000;
+    position: relative;
+    /*font-size: 10px;*/
+    /*font-weight: 500;*/
+    margin: 0 auto auto auto;
+    overflow: hidden;
+}
+
+.a4 {
+    width: 8in;
+    height: 11in;
+    margin: 0 auto;
+}
+
+.a4 .mainPrints {
+    float: left;
+}
+
+.img-A6 {
+    width: 100%;
+    height: 100%;
+}
+
+.Print_title span {
+    float: right;
+}
+
+.img-letter {
+    height: 29px;
+    width: 22px;
+    border: 1px solid;
+}
+
+.img-tcnh {
+    height: 29px;
+    width: 28px;
+    border: 1px solid;
+}
+
+.img-hcc {
+    height: 31px;
+    width: 23px;
+    border: 1px solid;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+#qrcode {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    top: 348px;
+    left: 260px;
+}
+
+.line-clamp-1 {
+    -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+    -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+    -webkit-line-clamp: 3;
+}
+
+.line-clamp-4 {
+    -webkit-line-clamp: 4;
+}
+
+.line-clamp-5 {
+    -webkit-line-clamp: 5;
+}
+
+.line-clamp-6 {
+    -webkit-line-clamp: 6;
+}
+
+.group-btn {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+.group-btn .btn {
+    font-size: 20px;
+}
+
+.index {
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    border-radius: 1.2em;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 9px;
+    border: 1px solid #000000;
+    padding: 0.1em;
+    position: absolute;
+}
+
+.absolute {
+    position: absolute;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    z-index: 1;
+}
+
+.pdr-5 {
+    padding-right: 5px;
+}
+
+.img-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.watermark-service-down {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 130px;
+    line-height: 282px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.watermark-service-up {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 88px;
+    line-height: 282px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.box-route {
+    border: 2px solid #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    min-height: 1em;
+}
+
+.box-dashed-red {
+    border: 1.5px dashed #E30D05;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 2px;
+    text-align: center;
+    color: #E30D05;
+    line-height: 1;
+}
+
+.f-8 {
+    font-size: 8px
+}
+
+.f-9 {
+    font-size: 9px
+}
+
+.f-10 {
+    font-size: 10px
+}
+
+.watermark {
+    opacity: 0.8;
+    width: fit-content;
+    position: absolute;
+    z-index: 0;
+}
+
+.tomato {
+    width: 100px;
+}
+
+.tomato.bot {
+    left: 10px;
+    bottom: 180px;
+}
+
+.tomato.top {
+    right: 10px;
+    top: 70px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.fw-bold {
+    font-weight: bold !important;
+}
+
+#block_1 {
+    display: flex;
+    position: absolute;
+    font-weight: 700;
+    top: 104px;
+    text-align: right;
+    left: 15px;
+    white-space: nowrap;
+    z-index: 1
+}
+
+#block_2 {
+    display: flex;
+    position: absolute;
+    font-size: 9px;
+    font-weight: 700;
+    top: 111px;
+    text-align: right;
+    right: 15px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+#block_2 .block-item ~ .block-item{
+    padding-left: 4px;
+    line-height: 1;
+    font-size: 9px
+}
+
+#block_3 {
+    position: absolute;
+    top: 145px;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+}
+
+#block_3 svg {
+    max-height: 42px;
+    max-width: 100%;
+    width: 100%;
+}
+#block_3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+#block_3 .info {
+    font-size: 12px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#route_name {
+    top: 75px;
+    left: 15px;
+    right: 15px;
+    position: absolute;
+    text-align: center;
+}
+
+#mail_line {
+    top: 52px;
+    right: 15px;
+    position: absolute
+}
+#mail_line .box-dashed-red{
+    min-height: 11px;
+    min-width: 70px;
+    font-size: 12px;
+}
+#province {
+    position: absolute;
+    top: 7px;
+    left: 54px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#district {
+    position: absolute;
+    top: 26px;
+    left: 71px;
+    font-size: 11px;
+    width: 240px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#wards {
+    top: 48px;
+    left: 66px;
+    font-size: 11px;
+    text-transform: uppercase;
+    width: 240px;
+    font-weight: bold;
+    position: absolute;
+}
+
+#block_4 {
+    top: 300px;
+    left: 16px;
+    width: 325px;
+    height: 13px;
+    line-height: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#post_office {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+    top: 37px;
+    right: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right
+}
+
+#block_5 {
+    top: 225px;
+    left: 37px;
+    width: 250px;
+    display: flex;
+}
+
+#address {
+    top: 240px;
+    left: 34px;
+    width: 258px;
+}
+
+#address2 {
+    top: 276px;
+    left: 38px;
+    width: 258px;
+}
+
+#receiver {
+    top: 262px;
+    left: 42px;
+    width: 250px;
+    display: flex
+}
+#customerTypeSender{
+    position: absolute;
+    top: 222px;
+    right: 15px;
+    z-index:9
+}
+#customerTypeReceiver{
+    position: absolute;
+    top: 258px;
+    right: 15px;
+    z-index:9
+}
+#watermark_1 {
+    position: absolute;
+    left: 0;
+    top: -60px;
+    opacity: 0.3;
+}
+
+#watermark_2 {
+    position: absolute;
+    right: 6px;
+    bottom: 50px;
+    opacity: 0.3;
+}
+
+.watermark-item {
+    -webkit-transform: rotate(325deg);
+    -moz-transform: rotate(325deg);
+    -ms-transform: rotate(325deg);
+    -o-transform: rotate(325deg);
+    transform: rotate(325deg);
+}
+
+#cod_fee {
+    top: 321px;
+    line-height: 1;
+    left: 85px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#block_6 {
+    top: 368px;
+    left: 17px;
+    width: 190px;
+    height: 92px;
+    -webkit-line-clamp: 7;
+}
+
+#xmg_note {
+    position: absolute;
+    top: 320px;
+    right: 15px;
+    z-index: 9
+}
+
+#icon_service {
+    top: 347px;
+    right: 127px;
+}
+
+#block_7 {
+    /*opacity: 0.9;*/
+    top: 129px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    font-size: 9px;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.copy-number {
+    position: absolute;
+    top: 1px;
+    right: 15px;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: bold;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.vertical-line{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    width: 148mm;
+    bottom: 273px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.vertical-line.left{
+    left: -274px;
+    transform: rotate(270deg);
+}
+.vertical-line.right{
+    right: -274px;
+    transform: rotate(90deg);
+}
+#logo{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 65px;
+}
+#logo img{
+    width: 100%;
+}
+#ngaygui{
+    position: absolute;
+    right: 28px;
+    top: 441px;
+    font-weight: bold;
+    text-align: center;
+    width: 80px;
+    line-height: 1.1;
+    font-size: 12px;
+}
+#orderNote{
+    position: absolute;
+    font-size: 10px;
+    line-height: 1.1;
+    top: 470px;
+    left: 17px;
+    width: 215px;
+    height: 44px;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+#orgFullname{
+    margin-right: 4px;
+    max-width: 80px;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
